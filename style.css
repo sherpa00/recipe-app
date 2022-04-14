@@ -1,0 +1,175 @@
+*,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 40px;
+    margin: 7px;
+}
+
+.container h2 {
+    font-size: 26px;
+    margin: 5px;
+}
+
+.container .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.search .inp {
+    width: 500px;
+    height: 50px;
+    padding: 5px;
+    text-indent: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 2px solid gray;
+    outline: none;
+}
+
+.container .results {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:  auto auto auto;
+    align-items: center;
+    grid-gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.results .res {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(77, 72, 72);
+}
+
+.res .meal_title {
+    font-size: 22px;
+    color: black;
+    padding: 7px;
+    background-color: rgb(250, 230, 207);
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.res .meal_tags {
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.res .meal_origin {
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 5px
+}
+
+.res .meal_learn_more {
+    font-size: 18px;
+    margin: 5px;
+    color: black;
+    background: lavenderblush;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.meal_intro {
+    background: white;
+    position: fixed;
+    top: 8%;
+    bottom: 0;
+    left: -50%;
+    right: 0;
+    width: 55%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: all 0.6s ease;
+    padding: 20px;
+    text-align: center;
+    overflow: scroll;
+}
+
+.meal_intro h4 {
+    text-align: right;
+    font-size: 40px;
+    position: relative;
+    top: -14px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.meal_intro .mealHead {
+    font-size: 26px;
+    margin-bottom: 15px;
+    border: 4px double black;
+    padding: 10px;
+    text-align: center;
+}
+
+.meal_intro p {
+    margin: 5px;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    font-weight: 600;
+}
+
+.meal_intro span {
+    font-weight: 400;
+}
+
+.meal_intro .mealHow {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.meal_intro .mealHowResult {
+    text-align: center;
+    font-weight: 400;
+}
+
+.meal_intro h4:hover {
+    color: crimson;
+}
+
+.meal_intro .yt {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
